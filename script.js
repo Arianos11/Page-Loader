@@ -100,6 +100,33 @@ function Loader3()
     }, 2000); 
 };
 
+function Loader4()
+{
+    var prenr = $(`.preloader-${preloader_number}`);
+    var nr = $(`.loader-${loader_number}`);
+    prenr.css('display', 'block');
+    prenr.removeClass('complete');
+    nr.removeClass('complete');
+
+    if(loader_number != 4)
+    {
+        nr.addClass('loader-4');
+        nr.removeClass(`loader-${loader_number}`);
+        loader_number = 4;
+        nr = $(`.loader-${loader_number}`);
+    }
+    refresh()
+    setTimeout(()=>{
+        nr.addClass('complete');
+        setTimeout(()=>{
+            prenr.addClass('complete');
+            setTimeout(()=>{
+                prenr.css('display', 'none');
+            }, 1000);
+        }, 300);
+    }, 4000); 
+};
+
 /* PreLoaders */
 
 function PreLoader1()
