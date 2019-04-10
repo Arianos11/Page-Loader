@@ -17,7 +17,7 @@ You must include js and css files to your project first.
 <script src="Page-Loader.js"></script>
 <link rel="stylesheet" href="Page-Loader.min.css" type="text/css">
 ```
-In your html file add preloader and loader div under body tag. In *'s place enter your choices (you can choose Preloaders in demo page or here ).
+In your html file add preloader and loader div under body tag. In *'s place enter your choices (you can choose Preloaders in demo page or here [Page](https://arianos11.github.io/Page-Loader/)).
 ```
 <div class="preloader-*">
     <div class="loader-*"></div>
