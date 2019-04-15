@@ -127,6 +127,61 @@ function Loader4()
     }, 4000); 
 };
 
+function Loader5()
+{
+    var prenr = $(`.preloader-${preloader_number}`);
+    var nr = $(`.loader-${loader_number}`);
+    prenr.css('display', 'block');
+    prenr.removeClass('complete');
+    nr.removeClass('complete');
+
+    if(loader_number != 5)
+    {
+        nr.addClass('loader-5');
+        nr.removeClass(`loader-${loader_number}`);
+        loader_number = 5;
+        nr = $(`.loader-${loader_number}`);
+    }
+    refresh()
+    setTimeout(()=>{
+        nr.addClass('complete');
+        setTimeout(()=>{
+            prenr.addClass('complete');
+            setTimeout(()=>{
+                prenr.css('display', 'none');
+            }, 1000);
+        }, 300);
+    }, 4000); 
+};
+
+function Loader6()
+{
+    var prenr = $(`.preloader-${preloader_number}`);
+    var nr = $(`.loader-${loader_number}`);
+    prenr.css('display', 'block');
+    prenr.removeClass('complete');
+    nr.removeClass('complete');
+
+    if(loader_number != 6)
+    {
+        nr.addClass('loader-6');
+        nr.removeClass(`loader-${loader_number}`);
+        loader_number = 6;
+        nr = $(`.loader-${loader_number}`);
+    }
+    refresh()
+    setTimeout(()=>{
+        nr.addClass('complete');
+        setTimeout(()=>{
+            prenr.addClass('complete');
+            setTimeout(()=>{
+                prenr.css('display', 'none');
+            }, 1000);
+        }, 300);
+    }, 2000); 
+};
+
+
 /* PreLoaders */
 
 function PreLoader1()
@@ -263,7 +318,6 @@ function PreLoader4()
         }, 300);
     }, 2000); 
 };
-
 
 function refresh()
 {

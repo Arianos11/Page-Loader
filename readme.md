@@ -2,6 +2,10 @@
 
 A new JavaScript API connected with css gives a few ready to use full customized preloaders for your website.
 
+## Demo Page
+
+[Link to Demo Page](https://arianos11.github.io/Page-Loader/)
+
 ### Prerequisites
 
 You must have installed JQuery before starting including a Page-Loader.
@@ -17,7 +21,7 @@ You must include js and css files to your project first.
 <script src="Page-Loader.js"></script>
 <link rel="stylesheet" href="Page-Loader.min.css" type="text/css">
 ```
-In your html file add preloader and loader div under body tag. In *'s place enter your choices (you can choose Preloaders in [Page](https://arianos11.github.io/Page-Loader/)).
+In your html file add preloader and loader div under body tag. In *'s place enter your choices (you can choose Preloaders on [Page](https://arianos11.github.io/Page-Loader/)).
 ```
 <div class="preloader-*">
     <div class="loader-*"></div>
